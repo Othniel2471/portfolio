@@ -3,7 +3,7 @@
     <nav>
       <div class="nav-header">
         <div class="menu-toggle"></div>
-        <h1>othniel omaidu</h1>
+        <!-- <h1>othniel omaidu</h1> -->
       </div>
       <ul class="nav-links">
         <li class="link hover-underline-animation">
@@ -97,7 +97,7 @@ nav a {
     left: 20px;
     top: 15px;
     font-weight: 600;
-    font-size: 100%;
+    font-size: 24px;
     max-height: fit-content;
     line-height: 54px;
     color: #5671a6;
