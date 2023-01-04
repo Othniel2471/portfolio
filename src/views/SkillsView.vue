@@ -176,7 +176,7 @@ const hoverFour = () => {
 }
 .skill-set {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 250px);
+  grid-template-columns: repeat(auto-fill, 220px);
   padding: 24px;
   gap: 20px;
   justify-content: center;
@@ -509,6 +509,11 @@ const hoverFour = () => {
   }
   100% {
     background-position: 2500px 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .skill-set {
+    width: 100%;
   }
 }
 </style>
