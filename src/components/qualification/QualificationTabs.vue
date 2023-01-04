@@ -37,6 +37,7 @@ const work = () => {
 <style scoped>
 .tabs {
   display: flex;
+  width: 20%;
 }
 .tab_links {
   margin-right: 8em;

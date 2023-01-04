@@ -1,21 +1,10 @@
-<!-- <template>
-  <div class="main container-fluid">
-    <NavBar />
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4"><SideBar /></div>
-        <div class="col-md-8"><RouterView /></div>
-      </div>
-    </div>
-  </div>
-</template> -->
-
 <template>
   <div id="defaultLayout">
     <SideBar />
     <div class="main">
       <NavBar />
-      <RouterView />
+      <router-view></router-view>
+      <!-- <RouterView /> -->
     </div>
   </div>
 </template>
@@ -23,12 +12,15 @@
 <script setup>
 import NavBar from "./NavBar.vue";
 import SideBar from "./SideBar.vue";
-import { RouterView } from "vue-router";
+// import { RouterView } from "vue-router";
 </script>
 
 <style scoped>
 #defaultLayout {
-  background-color: #f8fafb;
+  /* background-color: #f8fafb; */
+  background: url(../../../public/images/bgtwo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
   width: 100%;
   display: flex;
@@ -41,7 +33,7 @@ import { RouterView } from "vue-router";
   flex: 1;
   padding: 10px 25px;
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 </style>

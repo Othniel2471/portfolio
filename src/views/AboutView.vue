@@ -372,7 +372,7 @@ import QualificationVue from "@/components/qualification/Qualification.vue";
         <p class="qual">Qualification</p>
         <p class="text">My personal journey</p>
       </div>
-      <!-- <QualificationVue /> -->
+      <QualificationVue />
     </div>
   </div>
 </template>
@@ -500,6 +500,7 @@ import QualificationVue from "@/components/qualification/Qualification.vue";
   }
   .qualification .header .text {
     width: 100%;
+    font-size: 11px;
     transform: translate(0px, -5px);
   }
 }

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <hr />
     <div class="qualification_page">
       <QualificationTabs
         @education="tabs = 'education'"
@@ -7,7 +8,7 @@
       />
       <div v-if="tabs == 'education'"><EducationVue /></div>
       <div v-if="tabs == 'work'"><WorkVue /></div>
-      <hr />
+      <!-- <hr /> -->
     </div>
   </div>
 </template>
@@ -23,17 +24,13 @@ const tabs = ref("education");
 
 <style scoped>
 .qualification_page {
-  margin-top: 4.5rem;
-  position: absolute;
-  margin-left: 3rem;
-  top: 330px;
-  /* width: 100%; */
+  margin-top: 1.5rem;
 }
 hr {
   margin-top: 0.9em;
   /* background-color: #dbdbdb; */
-  border: 1px solid #dbdbdb;
-  position: absolute;
+  border: 1px solid #a79c9c;
+  /* position: absolute; */
   width: 100%;
   height: 0px;
 }
