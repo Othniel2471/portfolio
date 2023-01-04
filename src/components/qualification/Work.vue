@@ -109,5 +109,8 @@ export default {};
   .work-card {
     flex-direction: column;
   }
+  .card {
+    width: 100%;
+  }
 }
 </style>
