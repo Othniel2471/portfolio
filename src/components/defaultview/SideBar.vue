@@ -37,9 +37,6 @@
 </template>
 
 <style scoped>
-:root {
-  --border-color: pink;
-}
 .sidebar {
   box-sizing: border-box;
   display: flex;
@@ -48,9 +45,9 @@
   align-items: center;
   padding: 50px 46px;
   gap: 30px;
-  position: absolute;
+  /* position: absolute; */
   width: 271px;
-  height: 612px;
+  height: 100vh;
   left: 0px;
   top: 75px;
   border: 1px solid #6d8093;
@@ -85,7 +82,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-transform: capitalize;
-  margin-bottom: -1rem;
+  /* margin-bottom: -1rem; */
 }
 .job {
   width: 160px;
@@ -114,7 +111,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-left: -2.3rem; */
+  margin-left: -2.3rem;
   transform: translateY(50px);
 }
 .social_icon li {
@@ -149,15 +146,11 @@
 .contact-btn p {
   width: 95px;
   height: 24px;
-
-  font-family: "Poppins";
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height */
-
   color: #ffffff;
+  margin-top: 12px;
 }
 .contact-btn i img {
   width: 27.83px;
@@ -174,5 +167,10 @@
 .contact-btn:hover > i img {
   display: block;
   /* transition: 0.25s ease-in; */
+}
+@media only screen and (max-width: 565px) {
+  .sidebar {
+    display: none;
+  }
 }
 </style>
