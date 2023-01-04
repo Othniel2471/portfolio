@@ -41,7 +41,7 @@ export default {};
   align-items: flex-start;
   padding: 10px;
   gap: 5px;
-  margin-top: 2rem;
+  margin-top: 1rem;
   /* position: absolute; */
   /* top: 60px; */
   width: 200px;
@@ -61,13 +61,14 @@ export default {};
   /* margin-top: -4em; */
 }
 .card .school .course {
-  width: 73px;
+  width: 100px;
   height: 42px;
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
   margin-bottom: 3rem;
   color: #383838;
+  transform: translateY(1rem);
   transition: 0.25s;
 }
 .school {
@@ -93,14 +94,20 @@ export default {};
   color: #616161;
 }
 .date i {
-  /* transform: translateY(0.6em); */
+  transform: translateY(-0.4em);
   height: 0;
 }
 .card:hover > .school .course {
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
-
+  width: 150px;
   color: #5671a6;
+}
+/* media queries */
+@media only screen and (max-width: 600px) {
+  .edu-card {
+    flex-direction: column;
+  }
 }
 </style>

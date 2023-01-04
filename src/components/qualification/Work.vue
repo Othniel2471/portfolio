@@ -42,7 +42,9 @@ export default {};
   align-items: flex-start;
   padding: 10px;
   gap: 5px;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  /* position: absolute; */
+  /* top: 60px; */
   width: 200px;
   height: 150px;
   border: 1px solid #dbdbdb;
@@ -59,13 +61,14 @@ export default {};
   height: 98px;
 }
 .card .jobs .job {
-  width: 73px;
+  width: 102px;
   height: 42px;
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
   margin-bottom: 3rem;
   color: #383838;
+  transform: translateY(1rem);
   transition: 0.25s;
 }
 .office {
@@ -98,8 +101,13 @@ export default {};
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
-
+  width: 150px;
   color: #5671a6;
 }
 /* media queries */
+@media only screen and (max-width: 600px) {
+  .work-card {
+    flex-direction: column;
+  }
+}
 </style>
